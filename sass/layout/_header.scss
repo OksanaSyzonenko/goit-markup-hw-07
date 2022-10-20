@@ -1,0 +1,126 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    margin-right: 70px;
+}
+
+.web {
+    color: var(--accent-color);
+}
+
+.studio {
+    color: var(--secondary-text-color-theme-light);
+}
+
+.studio-dark {
+    color:var(--primary-text-color-theme-dark);
+}
+
+.page-header {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header-container {
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-navigation {
+    display: flex ;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex ;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.menu-item-studio,
+.menu-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+
+.menu-contact,    
+.menu-item-studio,
+.menu-item {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.menu-link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color:var(--primary-text-color-title);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.menu-link-studio {
+    color: var(--accent-color);
+}
+
+.menu-link-studio::after {
+    position: absolute;
+    content:"";
+    display: block;
+    width: 48px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+    top: 76px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+}
+
+.menu-item-studio:hover,
+.menu-item:focus {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.contact-email,
+.contact-phone-number {
+    display: flex;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color-theme-light);
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+
+.contact-email-icon,
+.contact-phone-number-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact-email-icon:hover,
+.contact-email-icon:focus {
+    color: var(--accent-color);
+}
+
+.contact-email:hover,
+.contact-email:focus {
+    color: var(--accent-color);  
+}
+
+.contact-phone-number:hover,
+.contact-phone-number:focus{
+    color: var(--accent-color);
+}
+
+.contact-phone-number-icon:hover,
+.contact-phone-number-icon:focus {
+    color: var(--accent-color);
+}

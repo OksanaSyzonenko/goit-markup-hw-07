@@ -1,0 +1,135 @@
+.modal-form-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-input {
+   width: 100%;
+   height: 40px;
+   border: 1px solid rgba(33, 33, 33, 0.2);
+   border-radius: 4px;
+   padding-left: 42px;
+   transition: border-color 250ms linear;
+}
+
+.modal-form-field-desc {
+    display: block;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 4px;
+}
+
+.modal-form-field {
+    margin-bottom: 10px;
+}
+
+.modal-form-input-icon {
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    transform: translate(-25%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    transition: background-color 250ms linear;
+}
+
+.modal-form-input-wrapper {
+    position: relative;
+    display: block;
+}
+
+.modal-form-input:focus + .modal-form-input-icon {
+    fill: #2196F3;
+}
+
+.modal-form-input:focus {
+    outline: none;
+    border-color:#2196F3;
+}
+
+.modal-form-message {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 120px;
+    color: #757575;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 15px;
+    resize: none;
+    transition: border-color 250ms linear;
+}
+
+.modal-form-message:focus {
+    outline: none;
+    border-color:#2196F3;
+    color: #212121;
+}
+
+.modal-form-message::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-own-checkbox {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.modal-form-own-checkbox-icon {
+    display: none;
+    fill: #FFFFFF;
+}
+
+.modal-form-check:checked + .modal-form-own-checkbox {
+    background-color:#2196F3;
+    border-color: #2196F3;
+    border-radius: 2px;
+}
+
+.modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
+    display: block;
+    fill: #FFFFFF;
+}
+
+.modal-form-own-checkbox-terms {
+    color: #2196F3;
+}
+
+.modal-form-check-field {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-form-check {
+    position: absolute;
+    appearance: none;
+}

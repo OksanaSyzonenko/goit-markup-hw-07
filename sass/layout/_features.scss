@@ -1,0 +1,27 @@
+.features-card {
+    width: 270px;
+    flex-basis: calc(( 100% - 90px ) / 4);
+}
+
+&-icon{
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-name{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+ 
+.features-text{
+    line-height: 1.71;
+    /* or 171% */
+    color: var(--primary-text-color-theme-light);
+}
